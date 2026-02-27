@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autostep - Automate Automation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-gray': {
+                            800: '#1e1e1e',
+                            900: '#131313'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- PostHog Analytics -->
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init ir nr Bi rr ar Ze er capture calculateEventProperties dr register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload getFeatureFlagResult isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty cr hr createPersonProfile setInternalOrTestUser pr Xe gr opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing lr debug At vr getPageViewId captureTraceFeedback captureTraceMetric Je".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_VysijPP6nIUVxJ7i5DQVpFQWDkb7SutqdaU5FYLnQPC', {
+            api_host: 'https://us.i.posthog.com',
+            defaults: '2026-01-30',
+            person_profiles: 'identified_only',
+        })
+    </script>
+    
+    <!-- Plausible Analytics -->
+    <script async src="https://plausible.io/js/pa-60bagUhj6nP6rBkfZWbr-.js"></script>
+    <script>
+        window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+        plausible.init()
+    </script>
+    
+    <!-- Warmly -->
+    <script id="warmly-script-loader" src="https://opps-widget.getwarmly.com/warmly.js?clientId=4772d18b251f01de8c829e53e96cc16e" defer></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-mono leading-relaxed">
+    <div class="min-h-screen flex flex-col">
+        <!-- Main Content -->
+        <main class="flex-1 container mx-auto px-6 py-16 max-w-4xl">
+            <!-- Header -->
+            <header class="mb-16">
+                <h1 class="text-4xl md:text-6xl font-light text-white mb-4 tracking-tight">
+                    Automate automation.
+                </h1>
+            </header>
+
+            <!-- Content -->
+            <div class="space-y-8 text-lg md:text-xl leading-relaxed text-gray-300">
+                <p>
+                    Autostep is an applied lab working on automating automation. Our approach is to build the last program: a human-AI feedback loop that understands how you work, knows the latest tools and methods, and closes the gap before you realize you had a problem.
+                </p>
+
+                <p>
+                    We're researchers and machine learning engineers who decided to stop waiting for the world to realize always-on AI is the future. We're building it.
+                </p>
+
+                <p class="text-white font-medium">
+                    Our mission: No one should have to do the same thing twice on a computer.
+                </p>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="mt-16 pt-8 border-t border-gray-700">
+                <div class="space-y-6">
+                    <p class="text-xl text-gray-300">
+                        As we introduce the next era of AI, consider <a href="https://app.dover.com/jobs/autostep" target="_blank" rel="noopener noreferrer" class="text-white underline hover:text-gray-300 transition-colors">joining</a> or <a href="https://calendly.com/aidan_/autostep" target="_blank" rel="noopener noreferrer" class="text-white underline hover:text-gray-300 transition-colors">registering interest</a>.
+                    </p>
+                    <p>
+                        <a href="https://autostep.ai" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors inline-flex items-center gap-2">
+                            <span>← Back to Autostep</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-8 border-t border-gray-800">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <p class="text-gray-500 text-sm">
+                    accrued, inc.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
